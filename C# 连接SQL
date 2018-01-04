@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SqlConnection myConnection;
+
+            string connStr = "Server=ROOOBINS-PC;database = Test;uid=sa;pwd=w*K19910909";
+
+            myConnection = new SqlConnection(connStr);
+            try
+            {
+                myConnection.Open();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("{0} Second exception caught.", e);
+                Console.ReadLine();
+            }
+            Console.WriteLine("连接成功！");
+            myConnection.Close();
+        }
+    }
+}
