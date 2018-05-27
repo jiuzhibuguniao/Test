@@ -1,0 +1,16 @@
+import pymysql
+
+
+db=pymysql.connect(host="**.**.***.**",user="Rooobins",password="*********",db="spiderData",port=3306)
+
+
+
+cursor=db.cursor()
+
+cursor.execute("select * from spotData limit 100")
+
+data=cursor.fetchall()
+print(type(data[0][0]))
+print(data)
+
+db.close()
