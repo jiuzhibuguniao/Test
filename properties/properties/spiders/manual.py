@@ -30,5 +30,3 @@ class BasicSpider(scrapy.Spider):
         l.add_xpath("image_urls","//*[starts-with(@src,'http://image.woshipm.com')]/@src",MapCompose(lambda i:i.strip()))
         # l.add_xpath("urls","//*[starts-with(@href,'http://www.woshipm.com')]/@href",MapCompose(lambda i:i[22:]))
         return l.load_item()
-
-
