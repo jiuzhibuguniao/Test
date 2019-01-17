@@ -1,1 +1,1 @@
-print("")
+print("test,if successfully del")
