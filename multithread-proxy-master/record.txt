@@ -1,0 +1,26 @@
+sudo /opt/mssql/bin/mssql-conf setup
+
+
+ln -s  /Library/Frameworks/Python.framework/Versions/3.6/bin/scrapy /usr/local/bin/scrapy
+
+
+git clone https://github.com/scalingexcellence/scrapybook.git
+cd scrapybook
+vagrant up --no-parallel
+
+
+
+
+sudo yum adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+
+
+
+
+;D:\Git\Git\bin;D:\Git\Git\usr\bin  
+;C:\Program Files\Oracle\VirtualBox
+
+
+
+
+There was an error while executing `VBoxManage`, a CLI used by Vagrant for controlling VirtualBox. The command and stderr is show below.
